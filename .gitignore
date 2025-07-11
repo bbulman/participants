@@ -1,6 +1,25 @@
-composer.phar
-/vendor/
+# Sensitive files - NEVER commit these
+.env
+includes/database.php
+config/secrets.php
 
-# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+# Server uploads and logs
+uploads/
+logs/
+cache/
+*.log
+error_log
+documents/
+scripts/
+
+# Development files
+.vscode/
+.idea/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Backups
+backup/
+*.bak
+*.sql
